@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Zarrin Productions — Partnership Packages</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:"DM Sans",sans-serif;background:#faf9f6;color:#1a1f2e;overflow-x:hidden;}
+:root{
+  --gold:#b8902a;--gold-l:#d4a843;--gold-pale:#fdf6e8;--gold-border:#e8d49a;
+  --navy:#1a2744;--blue:#2B5FEA;--blue-pale:#eef2ff;
+  --cream:#faf9f6;--white:#ffffff;--off:#f5f3ef;
+  --border:#e8e3d8;--text:#1a1f2e;--muted:#6b7280;
+  --green:#2a7a5a;--green-pale:#e8f5ef;
+}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#1a2744 0%,#243360 50%,#1e3a5f 100%);padding:96px 64px 88px;position:relative;overflow:hidden;text-align:center;}
+.hero-orb1{position:absolute;top:-200px;right:-100px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(184,144,42,.12) 0%,transparent 60%);pointer-events:none;}
+.hero-orb2{position:absolute;bottom:-150px;left:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(43,95,234,.1) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:2;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(184,144,42,.15);border:1px solid rgba(184,144,42,.3);border-radius:100px;padding:6px 18px;margin-bottom:32px;}
+.hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold-l);}
+.hero-badge span{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-l);}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(44px,6vw,72px);font-weight:600;line-height:1.05;color:#fff;margin-bottom:12px;}
+.hero h1 em{font-style:italic;color:var(--gold-l);}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.55);font-weight:300;max-width:580px;margin:0 auto 48px;line-height:1.7;}
+.hero-note{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 28px;font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.7;max-width:600px;}
+.hero-note strong{color:rgba(255,255,255,.85);font-weight:600;}
+.gold-bar{height:3px;background:linear-gradient(90deg,var(--gold-l) 0%,var(--gold) 30%,rgba(184,144,42,.1) 70%,transparent 100%);}
+
+/* MAIN */
+.main{max-width:1240px;margin:0 auto;padding:80px 48px 100px;}
+
+/* SECTION HEADER */
+.sec-header{text-align:center;margin-bottom:56px;}
+.sec-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.sec-eyebrow::before,.sec-eyebrow::after{content:"";width:20px;height:1px;background:var(--gold);}
+.sec-header h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,44px);font-weight:600;color:var(--navy);margin-bottom:14px;}
+.sec-header h2 em{font-style:italic;color:var(--gold);}
+.sec-header p{font-size:15.5px;color:var(--muted);max-width:600px;margin:0 auto;line-height:1.8;}
+
+/* DIVIDER */
+.section-break{height:1px;background:var(--border);margin:80px 0;}
+
+/* ── MONTHLY RETAINER PACKAGES ── */
+.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px;}
+.pkg{border-radius:24px;overflow:hidden;border:1px solid var(--border);background:var(--white);box-shadow:0 4px 32px rgba(26,39,68,.07);display:flex;flex-direction:column;transition:box-shadow .3s,transform .3s;animation:up .6s ease both;}
+.pkg:nth-child(2){animation-delay:.1s;}
+.pkg:nth-child(3){animation-delay:.2s;}
+.pkg:hover{box-shadow:0 16px 64px rgba(26,39,68,.14);transform:translateY(-4px);}
+.pkg.featured{border-color:var(--gold-border);box-shadow:0 8px 48px rgba(184,144,42,.2);}
+.pkg.featured:hover{box-shadow:0 20px 72px rgba(184,144,42,.28);}
+.pkg-head{padding:40px 36px 32px;position:relative;overflow:hidden;}
+.pkg-head.tier1{background:linear-gradient(145deg,#1a2744 0%,#243360 100%);}
+.pkg-head.tier2{background:linear-gradient(145deg,#1e3a5f 0%,#2a4f7c 100%);}
+.pkg-head.tier3{background:linear-gradient(145deg,#12213a 0%,#1a2f55 100%);}
+.pkg-head::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(184,144,42,.15) 0%,transparent 65%);}
+.pkg-tier{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:10px;}
+.pkg-name{font-family:"Playfair Display",serif;font-size:26px;font-weight:600;color:#fff;margin-bottom:6px;}
+.pkg-tagline{font-size:12.5px;color:rgba(255,255,255,.5);font-weight:300;margin-bottom:28px;line-height:1.5;}
+.pkg-price-wrap{display:flex;align-items:baseline;gap:4px;}
+.pkg-currency{font-size:20px;font-weight:600;color:var(--gold-l);margin-top:4px;}
+.pkg-price{font-family:"Playfair Display",serif;font-size:52px;font-weight:600;color:#fff;line-height:1;}
+.pkg-period{font-size:12px;color:rgba(255,255,255,.4);margin-left:2px;}
+.featured-badge{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:#1a2744;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:100px;}
+.pkg-body{padding:32px 36px 36px;flex:1;display:flex;flex-direction:column;}
+.pkg-section-title{font-size:9.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;margin-top:24px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.pkg-section-title:first-child{margin-top:0;}
+.pkg-items{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:4px;}
+.pkg-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text);line-height:1.5;}
+.pkg-item::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:5px;}
+.pkg-item.highlight{font-weight:600;color:var(--navy);}
+.pkg-item.muted{color:var(--muted);}
+.pkg-note{margin-top:auto;padding-top:24px;font-size:12px;color:var(--muted);line-height:1.65;font-style:italic;border-top:1px solid var(--border);}
+
+/* Platform tags within package cards */
+.platform-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.ptag{font-size:10px;font-weight:600;letter-spacing:.5px;padding:3px 10px;border-radius:20px;background:var(--gold-pale);color:#7a5e00;border:1px solid var(--gold-border);}
+
+/* ── EMPIRE CARD ── */
+.pkg-elite{border-radius:24px;overflow:hidden;border:2px solid var(--gold-border);background:var(--white);box-shadow:0 12px 64px rgba(184,144,42,.18);margin-bottom:56px;animation:up .6s .3s ease both;transition:box-shadow .3s,transform .3s;}
+.pkg-elite:hover{box-shadow:0 24px 80px rgba(184,144,42,.28);transform:translateY(-4px);}
+.elite-head{background:linear-gradient(120deg,#0d0f12 0%,#1a1f30 40%,#0f1a2e 100%);padding:60px 64px 52px;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;}
+.elite-head::before{content:"";position:absolute;top:-100px;right:-60px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(184,144,42,.1) 0%,transparent 55%);}
+.elite-head::after{content:"";position:absolute;bottom:-80px;left:-40px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(43,95,234,.08) 0%,transparent 55%);}
+.elite-head-left{position:relative;z-index:2;}
+.elite-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(184,144,42,.15);border:1px solid rgba(184,144,42,.3);border-radius:100px;padding:5px 14px;margin-bottom:20px;}
+.elite-eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--gold-l);box-shadow:0 0 6px rgba(212,168,67,.8);}
+.elite-eyebrow span{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold-l);}
+.elite-name{font-family:"Playfair Display",serif;font-size:clamp(36px,4vw,52px);font-weight:600;color:#fff;line-height:1;margin-bottom:12px;}
+.elite-name em{font-style:italic;color:var(--gold-l);}
+.elite-tagline{font-size:15px;color:rgba(255,255,255,.5);font-weight:300;max-width:540px;line-height:1.75;}
+.elite-price-col{position:relative;z-index:2;text-align:right;flex-shrink:0;}
+.elite-price-wrap{display:flex;align-items:baseline;gap:4px;justify-content:flex-end;}
+.elite-currency{font-size:22px;font-weight:600;color:var(--gold-l);}
+.elite-price{font-family:"Playfair Display",serif;font-size:68px;font-weight:600;color:#fff;line-height:1;}
+.elite-period{font-size:13px;color:rgba(255,255,255,.35);display:block;text-align:right;margin-top:4px;}
+.elite-badge{display:inline-block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:#0d0f12;font-size:9px;font-weight:900;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:16px;box-shadow:0 4px 20px rgba(184,144,42,.5);}
+.elite-body{padding:48px 64px 56px;}
+.elite-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
+.elite-col-title{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);padding-bottom:12px;margin-bottom:18px;border-bottom:2px solid var(--gold-border);}
+.elite-items{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.elite-item{display:flex;align-items:flex-start;gap:9px;font-size:12.5px;color:var(--text);line-height:1.5;}
+.elite-item::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:5px;}
+.elite-item.bold{font-weight:600;color:var(--navy);}
+.elite-item.muted{color:var(--muted);}
+.elite-team{background:linear-gradient(135deg,var(--navy) 0%,#1e3460 100%);border-radius:16px;padding:36px 40px;margin:40px 0;}
+.elite-team-title{font-family:"Playfair Display",serif;font-size:20px;font-weight:600;color:#fff;margin-bottom:6px;}
+.elite-team-title em{font-style:italic;color:var(--gold-l);}
+.elite-team-sub{font-size:12px;color:rgba(255,255,255,.65);margin-bottom:24px;}
+.elite-team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.team-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:16px 14px;text-align:center;transition:background .2s,border-color .2s;}
+.team-card:hover{background:rgba(184,144,42,.1);border-color:rgba(184,144,42,.25);}
+.team-icon{font-size:22px;margin-bottom:8px;}
+.team-role{font-size:11px;font-weight:700;color:#fff;margin-bottom:3px;}
+.team-desc{font-size:10px;color:rgba(255,255,255,.75);line-height:1.45;}
+.elite-highlight-strip{background:var(--gold-pale);border:1px solid var(--gold-border);border-radius:14px;padding:28px 36px;margin-bottom:40px;text-align:center;}
+.elite-highlight-strip p{font-size:14px;color:#7a6a3a;line-height:1.75;font-weight:400;}
+.elite-highlight-strip p strong{color:var(--navy);font-weight:700;}
+.elite-note{background:var(--off);border:1px solid var(--border);border-radius:12px;padding:20px 24px;font-size:12.5px;color:var(--muted);line-height:1.7;font-style:italic;text-align:center;}
+
+/* ── WEBSITE PACKAGES ── */
+.web-packages{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px;}
+.web-pkg{border-radius:20px;overflow:hidden;border:1px solid var(--border);background:var(--white);box-shadow:0 4px 24px rgba(26,39,68,.07);display:flex;flex-direction:column;animation:up .5s ease both;}
+.web-pkg.featured-web{border-color:var(--gold-border);box-shadow:0 8px 40px rgba(184,144,42,.2);}
+.web-pkg-badge{display:block;background:var(--gold);color:#1a2744;font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:7px 10px;text-align:center;width:100%;}
+.web-pkg-spacer{height:29px;background:var(--off);border-bottom:1px solid var(--border);}
+.web-pkg-top{padding:28px 28px 22px;border-bottom:1px solid var(--border);background:var(--off);}
+.web-pkg.featured-web .web-pkg-top{background:var(--gold-pale);}
+.web-pkg-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.web-pkg-price{font-family:"Playfair Display",serif;font-size:44px;font-weight:600;color:var(--navy);line-height:1;margin-bottom:6px;letter-spacing:-1px;}
+.web-pkg-caption{font-size:11.5px;color:var(--muted);line-height:1.5;}
+.web-pkg-body{padding:24px 28px;flex:1;display:flex;flex-direction:column;}
+.web-feature-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.web-feature-list li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:13px;color:var(--text);line-height:1.45;border-bottom:1px solid var(--off);}
+.web-feature-list li:last-child{border-bottom:none;}
+.wf-yes{color:var(--green);font-size:14px;flex-shrink:0;margin-top:1px;}
+.wf-no{color:#c8d0de;font-size:14px;flex-shrink:0;margin-top:1px;}
+.web-pkg-note{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);font-style:italic;line-height:1.55;}
+
+/* ── CUSTOM VIDEO ── */
+.custom-video-card{background:linear-gradient(145deg,#1a2744 0%,#243360 100%);border-radius:24px;padding:56px 64px;margin-bottom:24px;position:relative;overflow:hidden;animation:up .5s ease both;}
+.custom-video-card::before{content:"";position:absolute;top:-80px;right:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(184,144,42,.12) 0%,transparent 55%);pointer-events:none;}
+.custom-video-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;}
+.cv-left .cv-eyebrow{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold-l);margin-bottom:12px;}
+.cv-left h3{font-family:"Playfair Display",serif;font-size:clamp(28px,3vw,40px);font-weight:600;color:#fff;line-height:1.15;margin-bottom:12px;}
+.cv-left h3 em{font-style:italic;color:var(--gold-l);}
+.cv-left p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.75;max-width:480px;}
+.cv-right{flex-shrink:0;text-align:right;}
+.cv-price-label{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-l);margin-bottom:8px;}
+.cv-price{font-family:"Playfair Display",serif;font-size:60px;font-weight:600;color:#fff;line-height:1;letter-spacing:-2px;}
+.cv-price-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:6px;}
+.cv-stats{display:flex;gap:32px;margin-top:36px;flex-wrap:wrap;}
+.cv-stat{display:flex;flex-direction:column;gap:4px;}
+.cv-stat-num{font-family:"Playfair Display",serif;font-size:28px;font-weight:600;color:var(--gold-l);}
+.cv-stat-label{font-size:11px;color:rgba(255,255,255,.45);font-weight:500;}
+.cv-divider{width:1px;background:rgba(255,255,255,.12);align-self:stretch;}
+
+/* ── STANDALONE ASSETS ── */
+.asset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:24px;}
+.asset-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:28px 28px;animation:up .5s ease both;transition:border-color .2s,box-shadow .2s;}
+.asset-card:hover{border-color:var(--gold-border);box-shadow:0 8px 32px rgba(184,144,42,.12);}
+.asset-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;}
+.asset-icon{font-size:26px;}
+.asset-price-tag{font-family:"Playfair Display",serif;font-size:26px;font-weight:600;color:var(--navy);}
+.asset-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.asset-desc{font-size:12.5px;color:var(--muted);line-height:1.6;}
+.asset-detail{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted);font-style:italic;line-height:1.5;}
+
+/* ── PLATFORM MANAGEMENT ── */
+.platform-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:32px;}
+.platform-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;animation:up .5s ease both;}
+.platform-card-head{padding:20px 28px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.pc-name{font-size:15px;font-weight:700;color:var(--navy);}
+.pc-tag{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;flex-shrink:0;}
+.pc-tag.gold{background:var(--gold-pale);color:#7a5e00;border:1px solid var(--gold-border);}
+.pc-tag.blue{background:var(--blue-pale);color:#1a4fd6;border:1px solid #c0d0f5;}
+.pc-tag.green{background:var(--green-pale);color:var(--green);border:1px solid #a8dcc8;}
+.platform-card-body{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.pc-col{padding:18px 28px;}
+.pc-col:first-child{border-right:1px solid var(--border);}
+.pc-col-label{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.pc-col:first-child .pc-col-label{color:var(--green);}
+.pc-col:last-child .pc-col-label{color:#a33b3b;}
+.pc-list{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.pc-list li{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--muted);line-height:1.45;}
+.pc-yes{color:var(--green);flex-shrink:0;margin-top:1px;}
+.pc-no{color:#c77;flex-shrink:0;margin-top:1px;}
+
+/* ── DEMAND GENERATION ── */
+.demand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px;}
+.demand-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:24px;border-top:3px solid transparent;animation:up .5s ease both;}
+.demand-card.phase1{border-top-color:var(--gold);}
+.demand-card.phase2{border-top-color:var(--navy);}
+.demand-card.phase3{border-top-color:var(--muted);}
+.demand-phase{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
+.demand-card.phase1 .demand-phase{color:var(--gold);}
+.demand-card.phase2 .demand-phase{color:var(--navy);}
+.demand-card.phase3 .demand-phase{color:var(--muted);}
+.demand-name{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.demand-desc{font-size:12.5px;color:var(--muted);line-height:1.6;margin-bottom:14px;}
+.demand-items{list-style:none;display:flex;flex-direction:column;gap:5px;}
+.demand-items li{font-size:12px;color:var(--text);display:flex;gap:8px;align-items:flex-start;}
+.demand-items li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:5px;}
+.demand-note{background:var(--gold-pale);border:1px solid var(--gold-border);border-radius:12px;padding:18px 24px;font-size:12.5px;color:#7a6a3a;line-height:1.65;margin-top:20px;}
+
+/* ── ALWAYS INCLUDED ── */
+.always{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:52px;margin-bottom:56px;box-shadow:0 2px 24px rgba(26,39,68,.06);position:relative;overflow:hidden;animation:up .6s .25s ease both;}
+.always::before{content:"";position:absolute;top:-40px;right:-40px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,var(--gold-pale) 0%,transparent 65%);pointer-events:none;}
+.always-header{margin-bottom:36px;}
+.always h3{font-family:"Playfair Display",serif;font-size:clamp(24px,3vw,32px);font-weight:600;color:var(--navy);margin-top:8px;}
+.always h3 em{font-style:italic;color:var(--gold);}
+.always-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.always-item{background:var(--off);border:1px solid var(--border);border-radius:14px;padding:20px 18px;transition:border-color .2s,background .2s;}
+.always-item:hover{background:var(--gold-pale);border-color:var(--gold-border);}
+.always-icon{font-size:22px;margin-bottom:10px;}
+.always-item strong{display:block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.always-item span{font-size:12px;color:var(--muted);line-height:1.55;}
+
+/* CLOSING */
+.closing{background:linear-gradient(150deg,var(--navy) 0%,#243360 100%);border-radius:20px;padding:64px 56px;text-align:center;position:relative;overflow:hidden;animation:up .6s .3s ease both;box-shadow:0 8px 48px rgba(26,39,68,.2);}
+.closing::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(184,144,42,.1) 0%,transparent 65%);pointer-events:none;}
+.closing h2{font-family:"Playfair Display",serif;font-size:clamp(28px,4vw,44px);font-weight:600;color:#fff;margin-bottom:16px;}
+.closing h2 em{font-style:italic;color:var(--gold-l);}
+.closing p{font-size:16px;color:rgba(255,255,255,.55);max-width:540px;margin:0 auto 36px;line-height:1.8;font-weight:300;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 40px;border-radius:10px;font-size:14px;font-weight:600;letter-spacing:.3px;text-decoration:none;transition:all .2s;}
+.btn-gold{background:linear-gradient(135deg,#b8902a 0%,#d4a843 100%);color:#fff;box-shadow:0 6px 28px rgba(184,144,42,.4);}
+.btn-gold:hover{box-shadow:0 10px 36px rgba(184,144,42,.55);transform:translateY(-2px);}
+
+/* FOOTER */
+.foot{border-top:1px solid var(--border);padding:24px 48px;text-align:center;background:var(--white);}
+.foot p{font-size:11px;color:#bbb;letter-spacing:.5px;}
+
+/* ANIMATIONS */
+@keyframes up{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:none;}}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .packages,.web-packages{grid-template-columns:1fr 1fr;}
+  .elite-grid,.platform-grid{grid-template-columns:1fr 1fr;}
+  .elite-team-grid{grid-template-columns:repeat(2,1fr);}
+  .demand-grid,.asset-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:680px){
+  .packages,.web-packages,.asset-grid,.demand-grid{grid-template-columns:1fr;}
+  .platform-grid{grid-template-columns:1fr;}
+  .platform-card-body{grid-template-columns:1fr;}
+  .pc-col:first-child{border-right:none;border-bottom:1px solid var(--border);}
+  .elite-head{grid-template-columns:1fr;}
+  .elite-grid{grid-template-columns:1fr;}
+  .elite-team-grid{grid-template-columns:1fr 1fr;}
+  .always-grid{grid-template-columns:1fr 1fr;}
+  .main{padding:56px 24px 72px;}
+  .hero{padding:72px 24px 64px;}
+  .always,.closing{padding:36px 24px;}
+  .elite-body,.custom-video-card{padding:36px 28px;}
+  .elite-head{padding:40px 28px 36px;}
+  .custom-video-inner{grid-template-columns:1fr;}
+}
+@media(max-width:480px){
+  .always-grid,.elite-team-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-orb1"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><div class="hero-badge-dot"></div><span>Zarrin Productions &mdash; Partnership Packages</span></div>
+    <h1>Every Service.<br/><em>One Partner.</em></h1>
+    <p class="hero-sub">From monthly marketing retainers and full-stack website builds to large-scale video production, paid media management, and platform automation — Zarrin Productions handles every dimension of your brand's growth.</p>
+    <div class="hero-note">
+      <strong>These are not vendor relationships.</strong> Every engagement is built to function as a fully embedded creative and marketing team — working alongside you, not just for you. We manage the platforms, the creative, the strategy, and the performance.
+    </div>
+  </div>
+</header>
+
+<div class="gold-bar"></div>
+
+<main class="main">
+
+  <!-- ════════════════════════════════
+       MONTHLY RETAINER PACKAGES
+  ════════════════════════════════ -->
+  <div class="sec-header">
+    <div class="sec-eyebrow">Monthly Retainers</div>
+    <h2>Four Tiers. One <em>Creative Partner.</em></h2>
+    <p>Each package is a complete, integrated marketing operation. The difference is depth, volume, and the number of channels running concurrently on your behalf.</p>
+  </div>
+
+  <div class="packages">
+
+    <!-- TIER 1 -->
+    <div class="pkg">
+      <div class="pkg-head tier1">
+        <div class="pkg-tier">Tier 01 &mdash; Foundation</div>
+        <div class="pkg-name">Launch Ready</div>
+        <div class="pkg-tagline">Everything you need to enter the market with presence, credibility, and converting content.</div>
+        <div class="pkg-price-wrap">
+          <span class="pkg-currency">$</span>
+          <span class="pkg-price">15,000</span>
+          <span class="pkg-period">/month</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+
+        <div class="pkg-section-title">Website Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Monthly website management &amp; updates</li>
+          <li class="pkg-item">2 website updates monthly</li>
+          <li class="pkg-item">Basic on-page SEO + Google Search Console setup</li>
+        </ul>
+
+        <div class="pkg-section-title">Video Production</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">6 short-form videos per month</li>
+          <li class="pkg-item">Reels, TikTok &amp; YouTube Shorts formats</li>
+          <li class="pkg-item">2 Meta ad video creatives per month</li>
+          <li class="pkg-item">Scripting, editing, captions &amp; sound design</li>
+        </ul>
+
+        <div class="pkg-section-title">Social Media</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">8 static social posts per month</li>
+          <li class="pkg-item">2 platforms managed (e.g. Instagram + Facebook)</li>
+          <li class="pkg-item">Monthly content calendar &amp; scheduling</li>
+          <li class="pkg-item">Caption copywriting included</li>
+        </ul>
+
+        <div class="pkg-section-title">Paid Advertising</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Meta Ads Phase 1 — prospecting &amp; validation</li>
+          <li class="pkg-item">Pixel, events &amp; attribution setup</li>
+          <li class="pkg-item">Retargeting infrastructure from day one</li>
+          <li class="pkg-item">2 Meta ad creatives with A/B testing</li>
+          <li class="pkg-item muted">Ad spend budget not included</li>
+        </ul>
+
+        <div class="pkg-section-title">Platform Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">GoHighLevel basic setup &amp; management</li>
+          <li class="pkg-item">Email &amp; SMS automation foundations</li>
+        </ul>
+        <div class="platform-tags">
+          <span class="ptag">GoHighLevel</span>
+        </div>
+
+        <p class="pkg-note">Best for brands building their digital foundation and needing consistent, quality content across key channels.</p>
+      </div>
+    </div>
+
+    <!-- TIER 2 — FEATURED -->
+    <div class="pkg featured">
+      <div class="pkg-head tier2">
+        <div class="pkg-tier">Tier 02 &mdash; Growth</div>
+        <div class="pkg-name">Market Momentum</div>
+        <div class="pkg-tagline">A full-channel operation for brands ready to scale visibility, conversions, and authority.</div>
+        <div class="pkg-price-wrap">
+          <span class="pkg-currency">$</span>
+          <span class="pkg-price">19,500</span>
+          <span class="pkg-period">/month</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+
+        <div class="pkg-section-title">Website Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Everything in Foundation, plus:</li>
+          <li class="pkg-item">3 website updates monthly</li>
+          <li class="pkg-item">Ongoing conversion rate optimisation (CRO)</li>
+          <li class="pkg-item">Monthly analytics deep-dive report</li>
+        </ul>
+
+        <div class="pkg-section-title">SEO</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Full keyword research &amp; strategy</li>
+          <li class="pkg-item">On-page &amp; off-page SEO implementation</li>
+          <li class="pkg-item">2 SEO blog articles per month</li>
+        </ul>
+
+        <div class="pkg-section-title">Video Production</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">8 short-form videos per month</li>
+          <li class="pkg-item">4 Meta ad video creatives per month</li>
+          <li class="pkg-item">Scripting, editing, captions &amp; sound design</li>
+        </ul>
+
+        <div class="pkg-section-title">Social Media</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">12 static creatives per month</li>
+          <li class="pkg-item">3 platforms managed</li>
+          <li class="pkg-item">Full content strategy &amp; monthly calendar</li>
+        </ul>
+
+        <div class="pkg-section-title">Paid Advertising</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Meta + Google Search &amp; Performance Max</li>
+          <li class="pkg-item">Paid search targeting high-intent keywords</li>
+          <li class="pkg-item">4 active ad concepts with full A/B testing</li>
+          <li class="pkg-item">Retargeting campaign setup &amp; management</li>
+          <li class="pkg-item">Bi-weekly performance reviews</li>
+          <li class="pkg-item muted">Ad spend budget not included</li>
+        </ul>
+
+        <div class="pkg-section-title">Platform Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Full GoHighLevel setup, CRM &amp; automations</li>
+          <li class="pkg-item">Email &amp; SMS workflow management</li>
+        </ul>
+        <div class="platform-tags">
+          <span class="ptag">GoHighLevel</span>
+        </div>
+
+        <p class="pkg-note">Best for growing brands that need a serious, consistent marketing engine running across multiple channels simultaneously.</p>
+      </div>
+    </div>
+
+    <!-- TIER 3 -->
+    <div class="pkg featured">
+      <div class="pkg-head tier3">
+        <div class="featured-badge">Most Popular</div>
+        <div class="pkg-tier">Tier 03 &mdash; Scale</div>
+        <div class="pkg-name">Total Dominance</div>
+        <div class="pkg-tagline">Zarrin Productions as your embedded marketing department — no channel left uncovered.</div>
+        <div class="pkg-price-wrap">
+          <span class="pkg-currency">$</span>
+          <span class="pkg-price">25,000</span>
+          <span class="pkg-period">/month</span>
+        </div>
+      </div>
+      <div class="pkg-body">
+
+        <div class="pkg-section-title">Website Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Everything in Growth, plus:</li>
+          <li class="pkg-item">Unlimited website updates &amp; iterations</li>
+          <li class="pkg-item">Weekly analytics with strategic recommendations</li>
+          <li class="pkg-item">PR-style digital press strategy</li>
+        </ul>
+
+        <div class="pkg-section-title">SEO &amp; Authority</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Full technical, on-page &amp; off-page SEO</li>
+          <li class="pkg-item">Aggressive backlink campaign — 10 per month</li>
+          <li class="pkg-item">4 SEO blog articles per month</li>
+          <li class="pkg-item">Google Business Profile management</li>
+        </ul>
+
+        <div class="pkg-section-title">Video Production</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">16 short-form videos per month</li>
+          <li class="pkg-item">10 Meta ad video creatives per month</li>
+          <li class="pkg-item">1 long-form brand video per quarter</li>
+          <li class="pkg-item highlight">Video Business Card (VBC) produced quarterly</li>
+          <li class="pkg-item highlight">2 testimonial videos per month</li>
+        </ul>
+
+        <div class="pkg-section-title">Social Media</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">20 static creatives per month</li>
+          <li class="pkg-item">All active platforms managed (up to 5)</li>
+          <li class="pkg-item">Facebook, Instagram, YouTube &amp; TikTok</li>
+          <li class="pkg-item">Campaign launches &amp; community management</li>
+          <li class="pkg-item">Community engagement management</li>
+          <li class="pkg-item">Influencer outreach &amp; coordination</li>
+        </ul>
+
+        <div class="pkg-section-title">Paid Advertising</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Meta + Google + YouTube full-channel management</li>
+          <li class="pkg-item">Unlimited active ad concepts &amp; testing</li>
+          <li class="pkg-item">Full funnel: awareness to conversion</li>
+          <li class="pkg-item">Weekly optimisation &amp; scaling reviews</li>
+          <li class="pkg-item muted">Ad spend budget not included</li>
+        </ul>
+
+        <div class="pkg-section-title">Platform Management</div>
+        <ul class="pkg-items">
+          <li class="pkg-item highlight">Full tech stack management — all platforms</li>
+          <li class="pkg-item">Shopify Plus backend &amp; ecommerce operations</li>
+          <li class="pkg-item">Webflow front-end builds &amp; landing pages</li>
+          <li class="pkg-item">Funnel architecture &amp; lead nurturing flows</li>
+          <li class="pkg-item">GoHighLevel CRM, automations &amp; funnels</li>
+          <li class="pkg-item">Passion.io program app setup &amp; management</li>
+        </ul>
+        <div class="platform-tags">
+          <span class="ptag">Shopify Plus</span>
+          <span class="ptag">Webflow</span>
+          <span class="ptag">GoHighLevel</span>
+          <span class="ptag">Passion.io</span>
+        </div>
+
+        <p class="pkg-note">Best for brands that want to move fast, dominate their category, and never have to think about who is handling their marketing.</p>
+      </div>
+    </div>
+
+  </div><!-- /packages -->
+
+  <!-- EMPIRE -->
+  <div class="pkg-elite">
+    <div class="elite-head">
+      <div class="elite-head-left">
+        <div class="elite-eyebrow"><div class="elite-eyebrow-dot"></div><span>Tier 04 &mdash; Elite Partner</span></div>
+        <div class="elite-badge">&#9733; The Ultimate Package</div>
+        <div class="elite-name">The <em>Empire</em> Package</div>
+        <div class="elite-tagline">This is not a marketing retainer. This is handing over the keys to your entire business growth engine and watching it run — at full speed, across every channel, every platform, every day. We don't just support your brand. We become it.</div>
+      </div>
+      <div class="elite-price-col">
+        <div class="elite-price-wrap">
+          <span class="elite-currency">$</span>
+          <span class="elite-price">35,000</span>
+        </div>
+        <span class="elite-period">/month</span>
+      </div>
+    </div>
+
+    <div class="elite-body">
+
+      <div class="elite-team">
+        <div class="elite-team-title">Your <em>Dedicated Team</em> — All Included</div>
+        <div class="elite-team-sub">Eight specialists working exclusively on your brand. Not shared. Not rotated. Yours.</div>
+        <div class="elite-team-grid">
+          <div class="team-card"><div class="team-icon">&#127775;</div><div class="team-role">Team Lead</div><div class="team-desc">Manages every project, timeline, and deliverable seamlessly</div></div>
+          <div class="team-card"><div class="team-icon">&#129302;</div><div class="team-role">Automation Builder</div><div class="team-desc">Chatbots, funnels, workflows &amp; full GHL architecture</div></div>
+          <div class="team-card"><div class="team-icon">&#128200;</div><div class="team-role">Media Buyer</div><div class="team-desc">Amplifies campaigns across Meta, Google, TikTok &amp; YouTube</div></div>
+          <div class="team-card"><div class="team-icon">&#127758;</div><div class="team-role">Website Developer</div><div class="team-desc">Builds &amp; manages across Webflow, Shopify, GHL &amp; more</div></div>
+          <div class="team-card"><div class="team-icon">&#128140;</div><div class="team-role">Cold Outreach Specialist</div><div class="team-desc">Expands your lead pool through email &amp; LinkedIn automation</div></div>
+          <div class="team-card"><div class="team-icon">&#128269;</div><div class="team-role">SEO Expert</div><div class="team-desc">Dominates search rankings on every relevant keyword</div></div>
+          <div class="team-card"><div class="team-icon">&#127912;</div><div class="team-role">Designer</div><div class="team-desc">Visually engages your audience across every touchpoint</div></div>
+          <div class="team-card"><div class="team-icon">&#127909;</div><div class="team-role">Video Editor</div><div class="team-desc">Produces high-impact content for every platform and format</div></div>
+        </div>
+      </div>
+
+      <div class="elite-grid">
+
+        <div>
+          <div class="elite-col-title">GHL &amp; Automation</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">Full GoHighLevel setup &amp; architecture</li>
+            <li class="elite-item bold">Custom GHL Snapshots — bespoke, not cookie-cutter</li>
+            <li class="elite-item">Custom AI chatbots &amp; Conversation AI</li>
+            <li class="elite-item">WhatsApp integration &amp; automated onboarding setup</li>
+            <li class="elite-item">Lead generation funnels</li>
+            <li class="elite-item">SaaS funnels &amp; configuration</li>
+            <li class="elite-item">eCommerce stores</li>
+            <li class="elite-item">Lead scoring &amp; long-term nurture sequences</li>
+            <li class="elite-item">Appointment reminders</li>
+            <li class="elite-item">Birthday campaigns</li>
+            <li class="elite-item">Database reactivation campaigns</li>
+            <li class="elite-item">Customized branding within GHL</li>
+            <li class="elite-item">Proposals &amp; estimates automation</li>
+            <li class="elite-item">Workflows, automations &amp; Zapier integrations</li>
+            <li class="elite-item">CRM management &amp; full pipeline setup</li>
+            <li class="elite-item">Courses &amp; membership site setup</li>
+            <li class="elite-item">Email capture &amp; landing page builds</li>
+          </ul>
+
+          <div class="elite-col-title" style="margin-top:28px;">Website &amp; Digital Development</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">Shopify Plus, Webflow, GHL, Kajabi &amp; WordPress</li>
+            <li class="elite-item">Passion.io program app setup &amp; management</li>
+            <li class="elite-item">Custom design &amp; full headless builds</li>
+            <li class="elite-item">Speed, conversion &amp; landing page optimisation</li>
+            <li class="elite-item">Domain, server &amp; plugin configuration</li>
+            <li class="elite-item">Unlimited revisions &amp; ongoing development</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="elite-col-title">Video &amp; Creative Production</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">24 short-form videos per month</li>
+            <li class="elite-item">Instagram Reels, YouTube Shorts, TikTok &amp; Facebook</li>
+            <li class="elite-item">15 Meta &amp; Instagram ad video creatives per month</li>
+            <li class="elite-item">Monthly long-form brand or educational video</li>
+            <li class="elite-item bold">2 testimonial videos per month</li>
+            <li class="elite-item">Video Business Card (VBC) quarterly</li>
+            <li class="elite-item">FAQ video library build-out</li>
+            <li class="elite-item">Podcast editing &amp; video formatting</li>
+            <li class="elite-item">Full graphics design across all assets</li>
+          </ul>
+
+          <div class="elite-col-title" style="margin-top:28px;">Social Media Management</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">30 static creatives per month</li>
+            <li class="elite-item">All active platforms managed (unlimited)</li>
+            <li class="elite-item">Facebook, Instagram, YouTube, TikTok &amp; LinkedIn</li>
+            <li class="elite-item">Weekly &amp; monthly content calendars</li>
+            <li class="elite-item">Campaign launches &amp; product drops</li>
+            <li class="elite-item">Full community management &amp; DMs</li>
+            <li class="elite-item">Influencer outreach &amp; coordination</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="elite-col-title">Cold Outreach &amp; Lead Generation</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">G Suite warmup &amp; cold email software setup</li>
+            <li class="elite-item">Instantly, Lemlist, Mailshake configuration</li>
+            <li class="elite-item">Lead scraping &amp; list cleaning</li>
+            <li class="elite-item">Cold email sequence writing &amp; follow-ups</li>
+            <li class="elite-item bold">LinkedIn outreach automation (We-Connect)</li>
+            <li class="elite-item">Full cold prospecting pipeline</li>
+          </ul>
+
+          <div class="elite-col-title" style="margin-top:28px;">Paid Advertising &amp; SEO</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">Meta, Google, YouTube &amp; TikTok ad management</li>
+            <li class="elite-item">Google Search, Performance Max &amp; Display</li>
+            <li class="elite-item">Unlimited active ad concepts &amp; testing</li>
+            <li class="elite-item">Full funnel: awareness to conversion</li>
+            <li class="elite-item">Weekly optimisation calls</li>
+            <li class="elite-item bold">Full technical, on-page &amp; off-page SEO</li>
+            <li class="elite-item">Aggressive backlink campaign — 15 per month</li>
+            <li class="elite-item bold">6 SEO blog articles per month</li>
+            <li class="elite-item muted">Ad spend budget not included</li>
+          </ul>
+
+          <div class="elite-col-title" style="margin-top:28px;">Strategy &amp; Consulting</div>
+          <ul class="elite-items">
+            <li class="elite-item bold">Dedicated senior strategist assigned to your brand</li>
+            <li class="elite-item">Weekly strategy &amp; performance calls</li>
+            <li class="elite-item">Quarterly brand, growth &amp; funnel review</li>
+            <li class="elite-item">Launch roadmaps for products &amp; campaigns</li>
+            <li class="elite-item">Priority response &amp; direct team access</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="elite-highlight-strip">
+        <p>At this level, you are not hiring a marketing agency. <strong>You are building an in-house team at a fraction of the cost.</strong> Eight specialists. Every channel. Every platform. One monthly investment. While you focus on the business, <strong>we run everything else.</strong></p>
+      </div>
+
+      <div class="elite-note">The Empire Package is available to a <strong>limited number of clients</strong> to ensure every brand receives the full attention it deserves. Enquire early.</div>
+
+    </div>
+  </div>
+
+
+  <div class="section-break"></div>
+
+
+  <!-- ════════════════════════════════
+       WEBSITE PACKAGES
+  ════════════════════════════════ -->
+  <div class="sec-header">
+    <div class="sec-eyebrow">Website &amp; Digital Presence</div>
+    <h2>Three Options. One <em>Right Choice</em> for Launch.</h2>
+    <p>Not a brochure site. A conversion and education hub that earns trust, captures leads, and moves visitors into a purchase. Available as a standalone project or bundled within a retainer.</p>
+  </div>
+
+  <div class="web-packages">
+
+    <!-- OPTION 1 -->
+    <div class="web-pkg">
+      <div class="web-pkg-spacer"></div>
+      <div class="web-pkg-top">
+        <div class="web-pkg-label">Option 1 &mdash; Website Only</div>
+        <div class="web-pkg-price">$5,000</div>
+        <div class="web-pkg-caption">Up to 7 pages. Additional pages beyond 7 are billed at $200 each.</div>
+      </div>
+      <div class="web-pkg-body">
+        <ul class="web-feature-list">
+          <li><span class="wf-yes">✓</span> Website strategy &amp; sitemap</li>
+          <li><span class="wf-yes">✓</span> Homepage &amp; core sales pages</li>
+          <li><span class="wf-yes">✓</span> Shopify Plus backend setup</li>
+          <li><span class="wf-yes">✓</span> Webflow front-end design &amp; build</li>
+          <li><span class="wf-yes">✓</span> Core landing page included</li>
+          <li><span class="wf-yes">✓</span> Mobile optimisation</li>
+          <li><span class="wf-yes">✓</span> Analytics &amp; tracking setup</li>
+          <li><span class="wf-yes">✓</span> Launch-ready implementation</li>
+          <li><span class="wf-no">✗</span> Video Business Card</li>
+          <li><span class="wf-no">✗</span> FAQ video</li>
+          <li><span class="wf-no">✗</span> Testimonial videos</li>
+          <li><span class="wf-no">✗</span> Dedicated Meta ad landing page</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div class="web-pkg">
+      <div class="web-pkg-spacer"></div>
+      <div class="web-pkg-top">
+        <div class="web-pkg-label">Option 2 &mdash; Website Bundle</div>
+        <div class="web-pkg-price">$8,000</div>
+        <div class="web-pkg-caption">Everything in Option 1, plus two high-conversion video assets. Saves $4,000 vs purchasing separately.</div>
+      </div>
+      <div class="web-pkg-body">
+        <ul class="web-feature-list">
+          <li><span class="wf-yes">✓</span> Everything in Option 1</li>
+          <li><span class="wf-yes">✓</span> Video Business Card — embedded in hero section</li>
+          <li><span class="wf-yes">✓</span> FAQ Video — embedded on FAQ page</li>
+          <li><span class="wf-no">✗</span> Testimonial videos</li>
+          <li><span class="wf-no">✗</span> Dedicated Meta ad landing page</li>
+        </ul>
+        <div class="web-pkg-note">The Video Business Card is normally priced at $5,000 and the FAQ video at $2,000. Bundled here with the website, you save $4,000 compared to purchasing separately.</div>
+      </div>
+    </div>
+
+    <!-- OPTION 3 -->
+    <div class="web-pkg featured-web">
+      <div class="web-pkg-badge">Best Value &mdash; Our Recommendation</div>
+      <div class="web-pkg-top">
+        <div class="web-pkg-label">Option 3 &mdash; Full Conversion System</div>
+        <div class="web-pkg-price">$10,000</div>
+        <div class="web-pkg-caption">Unlimited pages. The complete launch-ready system with every trust and conversion asset built in.</div>
+      </div>
+      <div class="web-pkg-body">
+        <ul class="web-feature-list">
+          <li><span class="wf-yes">✓</span> Everything in Options 1 &amp; 2</li>
+          <li><span class="wf-yes">✓</span> <strong>Unlimited pages</strong> — no per-page cap</li>
+          <li><span class="wf-yes">✓</span> Video Business Card in hero section</li>
+          <li><span class="wf-yes">✓</span> FAQ Video</li>
+          <li><span class="wf-yes">✓</span> 3 testimonial videos featuring 50+ adults</li>
+          <li><span class="wf-yes">✓</span> Dedicated Meta ad landing page</li>
+          <li><span class="wf-yes">✓</span> Landing page feeds directly into main site</li>
+          <li><span class="wf-yes">✓</span> Testimonials reusable as Meta ad creative</li>
+        </ul>
+        <div class="web-pkg-note">Individual asset value (VBC + FAQ + 3 testimonials) exceeds $9,000. The $10,000 package delivers the full website system plus all of that at effectively the price of the website alone.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="section-break"></div>
+
+
+  <!-- ════════════════════════════════
+       STANDALONE CREATIVE ASSETS
+  ════════════════════════════════ -->
+  <div class="sec-header">
+    <div class="sec-eyebrow">Standalone Creative Assets</div>
+    <h2>Individual Assets. <em>Maximum Impact.</em></h2>
+    <p>Every creative asset Zarrin produces is available as a standalone project, independent of a monthly retainer. Pricing is per unit — volume rates available on request.</p>
+  </div>
+
+  <div class="asset-grid">
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">🎬</div>
+        <div class="asset-price-tag">$5,000</div>
+      </div>
+      <div class="asset-name">Video Business Card (VBC)</div>
+      <div class="asset-desc">A polished, brand-aligned video introduction designed to replace the first impression. Embedded in your website hero section or shared as a standalone link. Produced in both 16x9 and 9x16 formats. Commercial license included.</div>
+      <div class="asset-detail">Included in Website Options 2 and 3 at a bundled discount.</div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">❓</div>
+        <div class="asset-price-tag">$2,000</div>
+      </div>
+      <div class="asset-name">FAQ Video</div>
+      <div class="asset-desc">A professionally produced video addressing your most common buyer objections and questions. Reduces friction, builds trust, and shortens the time from visit to purchase. Embedded on your FAQ page. Commercial license included.</div>
+      <div class="asset-detail">Included in Website Options 2 and 3 at a bundled discount.</div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">🗣️</div>
+        <div class="asset-price-tag">$500 <span style="font-size:14px;font-weight:500;color:var(--muted);">/ video</span></div>
+      </div>
+      <div class="asset-name">Testimonial Videos</div>
+      <div class="asset-desc">Real, unperformed testimonial videos featuring authentic talent matched to your target demographic. Produced for both website use and ad deployment. Zarrin sources, directs, and edits talent on your behalf. Commercial license included.</div>
+      <div class="asset-detail">3 testimonial videos included in Website Option 3 at a bundled rate.</div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">🖼️</div>
+        <div class="asset-price-tag">$50 <span style="font-size:14px;font-weight:500;color:var(--muted);">/ creative</span></div>
+      </div>
+      <div class="asset-name">Static Creatives</div>
+      <div class="asset-desc">On-brand static graphics designed for social media, paid ads, email campaigns, or print. Delivered in all required dimensions and formats. Ideal for brands building a consistent visual presence across platforms.</div>
+      <div class="asset-detail">Included in bulk within monthly retainer packages at discounted volume rates.</div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">📱</div>
+        <div class="asset-price-tag">$300 <span style="font-size:14px;font-weight:500;color:var(--muted);">/ video</span></div>
+      </div>
+      <div class="asset-name">Short-Form Social Videos</div>
+      <div class="asset-desc">Edited short-form videos for organic social media pages — Reels, Shorts, and TikTok formats. Scripting, editing, captions, and sound design included. Delivered ready to post.</div>
+      <div class="asset-detail">Commercial license not included. For licensed ad use, see Meta Ad Videos below.</div>
+    </div>
+
+    <div class="asset-card">
+      <div class="asset-top">
+        <div class="asset-icon">📣</div>
+        <div class="asset-price-tag">$500 <span style="font-size:14px;font-weight:500;color:var(--muted);">/ video</span></div>
+      </div>
+      <div class="asset-name">Meta Ad Videos</div>
+      <div class="asset-desc">Performance-first video creatives produced specifically for Meta ad campaigns. Hook-led format, platform-optimised pacing, and conversion-focused messaging. Delivered in both 16x9 and 9x16 ad formats.</div>
+      <div class="asset-detail">Commercial license included. Ready to deploy directly into your Meta Ads Manager.</div>
+    </div>
+
+  </div>
+
+
+  <div class="section-break"></div>
+
+
+  <!-- ════════════════════════════════
+       PLATFORM MANAGEMENT
+  ════════════════════════════════ -->
+  <div class="sec-header">
+    <div class="sec-eyebrow">Platform &amp; Technology Management</div>
+    <h2>Every Platform. <em>Fully Managed.</em></h2>
+    <p>Zarrin Productions manages the full technology stack end-to-end — from ecommerce backend and front-end design to program delivery apps and marketing automation. You never need to source a separate developer or agency for any of these platforms.</p>
+  </div>
+
+  <div class="platform-grid">
+
+    <div class="platform-card">
+      <div class="platform-card-head">
+        <div class="pc-name">Shopify Plus — Ecommerce Backend</div>
+        <div class="pc-tag gold">Managed by Zarrin</div>
+      </div>
+      <div class="platform-card-body">
+        <div class="pc-col">
+          <div class="pc-col-label">What We Manage</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">✓</span> Physical product ecommerce &amp; warehouse integration</li>
+            <li><span class="pc-yes">✓</span> Multi-state tax calculations &amp; order management</li>
+            <li><span class="pc-yes">✓</span> Checkout setup &amp; payment gateway configuration</li>
+            <li><span class="pc-yes">✓</span> Subscription apps for program &amp; product renewals</li>
+            <li><span class="pc-yes">✓</span> Headless integration with Webflow front-end via API</li>
+          </ul>
+        </div>
+        <div class="pc-col">
+          <div class="pc-col-label">Best For</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">→</span> Brands selling physical products at scale</li>
+            <li><span class="pc-yes">→</span> Multi-state or international commerce</li>
+            <li><span class="pc-yes">→</span> Subscription &amp; repurchase product models</li>
+            <li><span class="pc-yes">→</span> Brands needing premium commerce + premium front-end</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card">
+      <div class="platform-card-head">
+        <div class="pc-name">Webflow — Front-End &amp; Landing Pages</div>
+        <div class="pc-tag gold">Managed by Zarrin</div>
+      </div>
+      <div class="platform-card-body">
+        <div class="pc-col">
+          <div class="pc-col-label">What We Manage</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">✓</span> Brand-quality website design with full creative freedom</li>
+            <li><span class="pc-yes">✓</span> Conversion-first landing page builds for paid traffic</li>
+            <li><span class="pc-yes">✓</span> Fast load speeds &amp; full mobile optimisation</li>
+            <li><span class="pc-yes">✓</span> Analytics, pixel &amp; tracking integration</li>
+            <li><span class="pc-yes">✓</span> Ongoing updates &amp; iterations — no dependency on external developers</li>
+          </ul>
+        </div>
+        <div class="pc-col">
+          <div class="pc-col-label">Best For</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">→</span> Premium brand presentation &amp; storytelling</li>
+            <li><span class="pc-yes">→</span> High-converting paid ad landing pages</li>
+            <li><span class="pc-yes">→</span> Brands that want design quality without template constraints</li>
+            <li><span class="pc-yes">→</span> Front-end layer over a Shopify Plus backend</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card">
+      <div class="platform-card-head">
+        <div class="pc-name">GoHighLevel — Automation, CRM &amp; Funnels</div>
+        <div class="pc-tag green">Managed by Zarrin</div>
+      </div>
+      <div class="platform-card-body">
+        <div class="pc-col">
+          <div class="pc-col-label">What We Manage</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">✓</span> Full GHL setup, CRM &amp; pipeline configuration</li>
+            <li><span class="pc-yes">✓</span> Email &amp; SMS automation workflows</li>
+            <li><span class="pc-yes">✓</span> AI chatbots &amp; Conversation AI</li>
+            <li><span class="pc-yes">✓</span> Funnel &amp; lead capture page builds</li>
+            <li><span class="pc-yes">✓</span> Video hosting for funnel &amp; marketing assets</li>
+            <li><span class="pc-yes">✓</span> Remarketing infrastructure &amp; lead nurturing</li>
+          </ul>
+        </div>
+        <div class="pc-col">
+          <div class="pc-col-label">Best For</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">→</span> Brands needing automation without hiring operations staff</li>
+            <li><span class="pc-yes">→</span> Lead nurturing, abandoned visit recovery</li>
+            <li><span class="pc-yes">→</span> Marketing funnel management at scale</li>
+            <li><span class="pc-yes">→</span> Coaching, info product &amp; program businesses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card">
+      <div class="platform-card-head">
+        <div class="pc-name">Passion.io — Gated Program Delivery App</div>
+        <div class="pc-tag blue">Managed by Zarrin</div>
+      </div>
+      <div class="platform-card-body">
+        <div class="pc-col">
+          <div class="pc-col-label">What We Manage</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">✓</span> App setup, branding &amp; full white-label configuration</li>
+            <li><span class="pc-yes">✓</span> Drip content delivery setup (Day 1 through Day 90+)</li>
+            <li><span class="pc-yes">✓</span> Gamification: points, streaks, rewards &amp; leaderboards</li>
+            <li><span class="pc-yes">✓</span> Community features &amp; member engagement setup</li>
+            <li><span class="pc-yes">✓</span> Mobile &amp; web delivery configuration</li>
+            <li><span class="pc-yes">✓</span> Shopify Plus integration for seamless repurchase flow</li>
+          </ul>
+        </div>
+        <div class="pc-col">
+          <div class="pc-col-label">Best For</div>
+          <ul class="pc-list">
+            <li><span class="pc-yes">→</span> Brands delivering gated program or course content</li>
+            <li><span class="pc-yes">→</span> Physical product + digital program bundles</li>
+            <li><span class="pc-yes">→</span> 90-day or structured habit-based programs</li>
+            <li><span class="pc-yes">→</span> Brands focused on retention &amp; community building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="section-break"></div>
+
+
+  <!-- ════════════════════════════════
+       DEMAND GENERATION
+  ════════════════════════════════ -->
+  <div class="sec-header">
+    <div class="sec-eyebrow">Paid Advertising &amp; Media Buying</div>
+    <h2>Traffic That <em>Converts.</em></h2>
+    <p>Strategy, account setup, creative production, and ongoing performance management across Meta, Google, and YouTube. Ad spend budget is separate — Zarrin manages the strategy and execution.</p>
+  </div>
+
+  <div class="demand-grid">
+
+    <div class="demand-card phase1">
+      <div class="demand-phase">Phase 1 &mdash; Launch</div>
+      <div class="demand-name">Meta Ads</div>
+      <div class="demand-desc">The strongest launch channel for consumer brands. Prospecting, validation, and retargeting infrastructure established from day one.</div>
+      <ul class="demand-items">
+        <li>Meta prospecting campaigns across multiple creative angles</li>
+        <li>Pixel, events &amp; attribution setup across all platforms</li>
+        <li>Retargeting infrastructure built from day one</li>
+        <li>Landing page vs. product-page traffic testing</li>
+        <li>Facebook &amp; Instagram placements</li>
+      </ul>
+    </div>
+
+    <div class="demand-card phase2">
+      <div class="demand-phase">Phase 2 &mdash; Scale</div>
+      <div class="demand-name">Google Search &amp; Performance Max</div>
+      <div class="demand-desc">Paid search targeting buyers already in active research mode — high-intent, high-conversion, fast time to purchase.</div>
+      <ul class="demand-items">
+        <li>Google Search campaigns targeting specific buyer intent keywords</li>
+        <li>Performance Max campaigns for broad conversion reach</li>
+        <li>Cut weak ad sets, scale highest-performing hooks</li>
+        <li>Activate testimonial &amp; social proof creative formats</li>
+        <li>Email &amp; SMS nurture flows for non-buyers</li>
+      </ul>
+    </div>
+
+    <div class="demand-card phase3">
+      <div class="demand-phase">Phase 3 &mdash; Expand</div>
+      <div class="demand-name">YouTube &amp; TikTok</div>
+      <div class="demand-desc">Awareness and influence channels activated once the Meta and Google foundation is performing and creative assets have expanded.</div>
+      <ul class="demand-items">
+        <li>YouTube skippable pre-roll and short-form ad campaigns</li>
+        <li>TikTok activated for secondary &amp; family-influence audience</li>
+        <li>Branded search campaigns as awareness builds</li>
+        <li>Expanded lookalike audiences from first-party data</li>
+        <li>High-intent retargeting pools across all channels</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="demand-note">
+    <strong>What Zarrin manages across all phases:</strong> media buying strategy, ad account setup and audit, creative production aligned to campaign goals, funnel and landing page alignment, retargeting setup and audience management, weekly campaign optimisation, clear performance reporting, and a creative refresh cycle every 4 to 6 weeks. Ad spend budget goes directly to the platforms and is not included in Zarrin's fee.
+  </div>
+
+
+  <div class="section-break"></div>
+
+
+  <!-- ════════════════════════════════
+       ALWAYS INCLUDED
+  ════════════════════════════════ -->
+  <div class="always">
+    <div class="always-header">
+      <div class="sec-eyebrow">Across Every Package</div>
+      <h3>What Is <em>Always</em> Included</h3>
+    </div>
+    <div class="always-grid">
+      <div class="always-item">
+        <div class="always-icon">&#127775;</div>
+        <strong>Brand Consistency</strong>
+        <span>Every asset produced adheres strictly to your brand guidelines — colours, tone, voice, and identity.</span>
+      </div>
+      <div class="always-item">
+        <div class="always-icon">&#128274;</div>
+        <strong>DSHEA &amp; FTC Compliance</strong>
+        <span>All content for health and nutraceutical brands is fully compliant with FTC and FDA guidelines.</span>
+      </div>
+      <div class="always-item">
+        <div class="always-icon">&#128202;</div>
+        <strong>Monthly Reporting</strong>
+        <span>Clear, honest performance reporting every month — with insights you can actually act on.</span>
+      </div>
+      <div class="always-item">
+        <div class="always-icon">&#128172;</div>
+        <strong>Direct Communication</strong>
+        <span>No account managers between you and the team. You speak directly with the people doing the work.</span>
+      </div>
+      <div class="always-item">
+        <div class="always-icon">&#128736;</div>
+        <strong>AI-Powered Production</strong>
+        <span>We leverage the full AI production stack to deliver faster, sharper, and more cost-effective creative output.</span>
+      </div>
+      <div class="always-item">
+        <div class="always-icon">&#128640;</div>
+        <strong>Scalable on Demand</strong>
+        <span>As your brand grows, we grow with it. Add channels, campaigns, or content pillars at any time.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <h2>Ready to Build <em>Something Real?</em></h2>
+    <p>Every engagement starts with a strategy conversation. We map your goals, your audience, and your gaps — then we get to work. No fluff. No filler. Just results.</p>
+    <a href="https://calendly.com/lucy-zarrinproduction" target="_blank" class="btn btn-gold">Schedule a Strategy Call</a>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <p>Zarrin Productions &copy; 2026 &nbsp;&middot;&nbsp; Retainer packages are monthly &nbsp;&middot;&nbsp; Project services are priced per scope &nbsp;&middot;&nbsp; Ad spend budgets not included &nbsp;&middot;&nbsp; All packages subject to onboarding and a signed Service Agreement</p>
+</footer>
+
+</body>
+</html>
